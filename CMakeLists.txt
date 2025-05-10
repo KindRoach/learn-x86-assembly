@@ -8,3 +8,5 @@ enable_language(ASM_NASM)
 
 # Add executable from asm code
 add_executable(main-asm main.asm)
+
+add_executable(main-cpp main.cpp lib.hpp lib.asm)
