@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.28)
 project(LearnX86Assembly)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -7,7 +7,12 @@ set(CMAKE_CXX_STANDARD 20)
 enable_language(ASM_NASM)
 
 # Add executable from asm code
-add_executable(main-asm main.asm)
+add_executable(asm-main src/001-asm-main/main.asm)
 
-add_executable(main-cpp main.cpp lib.hpp lib.asm
-        lib.cpp)
+# Add executable from cpp and asm code
+add_executable(asm-lib
+        src/002-asm-lib/main.cpp
+        src/002-asm-lib/lib.hpp
+        src/002-asm-lib/lib.asm
+        src/002-asm-lib/lib.cpp
+)
