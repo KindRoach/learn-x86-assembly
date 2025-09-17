@@ -16,3 +16,6 @@ add_executable(asm-lib
         src/002-asm-lib/lib.asm
         src/002-asm-lib/lib.cpp
 )
+
+# Add executable from asm code
+add_executable(inline-asm src/003-inline-asm/inline-asm.cpp)
