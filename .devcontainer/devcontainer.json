@@ -1,0 +1,6 @@
+{
+    "name": "Learn-x86-assembly Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}
